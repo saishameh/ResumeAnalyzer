@@ -105,7 +105,7 @@ def main():
     genai.configure(api_key=api_key)
     
     # Get file path from user
-    pdf_path = "Resume.pdf"
+    pdf_path = input("Enter the path to the resume PDF: ").strip()
     # if not os.path.exists(pdf_path):
     #     print(f"Error: File not found at {pdf_path}")
     #     return
